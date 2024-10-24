@@ -13,4 +13,4 @@ model=joblib.load("model.pkl")
 if st.button("prediction"):
     features=np.array([[TV,Newspaper,Radio]])
     output=model.predict(features)
-    st.write(f"the total sales is {output[0]}")
+    st.write(f"the total sales is {output[0]}") 
